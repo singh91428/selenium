@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-12-08T10:48:59 IST" name="Suite" finished-at="2021-12-08T10:49:52 IST" duration-ms="53343">
+    <groups>
+    </groups>
+    <test started-at="2021-12-08T10:48:59 IST" name="Test" finished-at="2021-12-08T10:49:52 IST" duration-ms="53343">
+      <class name="com.test.AmazonTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.AmazonTest@932bc4a]" started-at="2021-12-08T10:48:59 IST" name="setUp" finished-at="2021-12-08T10:49:07 IST" duration-ms="7982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AM_01()[pri:1, instance:com.test.AmazonTest@932bc4a]" started-at="2021-12-08T10:49:07 IST" name="AM_01" finished-at="2021-12-08T10:49:20 IST" duration-ms="13272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AM_01 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.test.AmazonTest@932bc4a]" started-at="2021-12-08T10:49:20 IST" name="closeDriver" finished-at="2021-12-08T10:49:24 IST" duration-ms="3393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.AmazonTest@932bc4a]" started-at="2021-12-08T10:49:24 IST" name="setUp" finished-at="2021-12-08T10:49:30 IST" duration-ms="6798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AM_02()[pri:2, instance:com.test.AmazonTest@932bc4a]" started-at="2021-12-08T10:49:30 IST" name="AM_02" finished-at="2021-12-08T10:49:34 IST" duration-ms="3379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AM_02 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.test.AmazonTest@932bc4a]" started-at="2021-12-08T10:49:34 IST" name="closeDriver" finished-at="2021-12-08T10:49:37 IST" duration-ms="3365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.AmazonTest@932bc4a]" started-at="2021-12-08T10:49:37 IST" name="setUp" finished-at="2021-12-08T10:49:42 IST" duration-ms="5225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AM_03()[pri:3, instance:com.test.AmazonTest@932bc4a]" started-at="2021-12-08T10:49:42 IST" name="AM_03" finished-at="2021-12-08T10:49:49 IST" duration-ms="6242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AM_03 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.test.AmazonTest@932bc4a]" started-at="2021-12-08T10:49:49 IST" name="closeDriver" finished-at="2021-12-08T10:49:52 IST" duration-ms="3619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.test.AmazonTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
