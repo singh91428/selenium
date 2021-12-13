@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="tests" thread-count="2" name="Suite">
+<!-- 
+  For parallel execution
+<suite parallel="methods" thread-count="2" name="Suite"> -->
+
+  <test name="ChromeBrowser">
+  <parameter name="browser" value="chrome" />
+    <classes>
+      <class name="com.apptad.test.CrossBrowserTesting"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="FireFoxBrowser">
+  <parameter name="browser" value="firefox" />
+    <classes>
+      <class name="com.apptad.test.CrossBrowserTesting"/>
+    </classes>
+  </test>  
+</suite> <!-- Suite -->
