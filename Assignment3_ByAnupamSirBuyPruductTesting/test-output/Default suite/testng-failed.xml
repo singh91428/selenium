@@ -5,7 +5,7 @@
     <classes>
       <class name="com.apptad.test.BuyProductTest">
         <methods>
-          <include name="User_scenario_03"/>
+          <include name="buyPrductTest"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
         </methods>

@@ -1,6 +1,6 @@
 package com.appted.helper;
 
-import javax.xml.xpath.XPath;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -59,7 +59,7 @@ public class EcommercePage extends ActionsOnPage{
 	
 	@FindBy(xpath = "//*[@id=\"center_column\"]/form/p/button/span")
 	WebElement proceedBtnAddress;
-	//*[@id="center_column"]/form/p/button/span/text()
+	//*[@id="center_column"]/form/p/button/span
 	@FindBy(id="cgv")
 	WebElement agreeShipping;
 	
@@ -78,11 +78,11 @@ public class EcommercePage extends ActionsOnPage{
 	@FindBy(xpath = "//*[@id=\"category\"]/div[2]/div/div/div/div/p")
 	WebElement wishListError;
 	
-	@FindBy(xpath = "s//*[@id=\"cart_quantity_up_1_1_0_616169\"]/span")
+	@FindBy(xpath = "//a[@title='Add']")
 	WebElement addItem;
 	
 	public void buyProduct(WebDriver driver) {
-		
+//		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		clickOnElement(signInBtn);
 		sendDataToInput(getLoadedElement(driver,emailInputLogin), "singh9145455@gmail.com");
 		sendDataToInput(getLoadedElement(driver,passInputLogin), "chandrakr");
@@ -115,7 +115,9 @@ public class EcommercePage extends ActionsOnPage{
 		scrollDown(driver, 750);
 		stop(200);
 		//clickOnElement(proceedBtnAddress); ====
-		proceedBtnAddress.click();
+		//proceedBtnAddress.click();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		clickOnElement(getLoadedElement(driver, proceedBtnAddress));
 		scrollDown(driver, 750);
 		stop(200);
 		clickOnElement(getLoadedElement(driver,agreeShipping));
@@ -139,7 +141,7 @@ public class EcommercePage extends ActionsOnPage{
 		clickOnElement(wishList);
 		wishListValidate(driver,wishListError, "You must be logged in to manage your wishlist.");
 	}
-	public void verifyPrice() {
+	public void verifyPrice(WebDriver driver) {
 		clickOnElement(signInBtn);
 		sendDataToInput(getLoadedElement(driver,emailInputLogin), "singh9145455@gmail.com");
 		sendDataToInput(getLoadedElement(driver,passInputLogin), "chandrakr");
@@ -152,8 +154,10 @@ public class EcommercePage extends ActionsOnPage{
 		selectFromDropDown(itemSizeDd, "2");
 		clickOnElement(blueColorBtn);
 		clickOnElement(addtoCartBtn);
+		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		clickOnElement(getLoadedElement(driver,proceeddBtn));
-		scrollDown(driver, 750);
+		scrollDown(driver, 550);
+		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		addItem.click();
 		stop(2000);
 	}
