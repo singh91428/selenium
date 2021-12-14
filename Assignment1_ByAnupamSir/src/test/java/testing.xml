@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="false" name="Suite">
-  <test name="Test">
+<suite parallel="tests" name="Suite">
+  <test name="RegTest">
     <classes>
       <class name="com.apptad.test.RegisterUserTest"/>
     </classes>
-  </test> <!-- Test -->
+  </test> 
+  <test name="BuyTest">
+    <classes>
+      <class name="com.apptad.test.BuyProductTest"/>
+    </classes>
+  </test> 
+  <test name="SearchTest">
+    <classes>
+      <class name="com.apptad.test.SearchProductTest"/>
+    </classes>
+  </test> 
 </suite> <!-- Suite -->

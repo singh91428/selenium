@@ -1,13 +1,17 @@
 package com.apptad.test;
 
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.appted.helper.CreateDriver;
-import com.appted.helper.EcommercePage1;
+import com.appted.driver.CreateDriver;
+import com.appted.page.EcommercePage1;
+import com.appted.screenshot.TakeScreenShotOnTest;
+@Listeners(TakeScreenShotOnTest.class)
 public class BuyProductTest {
 	WebDriver driver;
 	EcommercePage1  page;

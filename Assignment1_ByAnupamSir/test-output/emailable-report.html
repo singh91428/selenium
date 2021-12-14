@@ -9,25 +9,35 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">170,336</td><td></td><td></td></tr>
+<tr><td><a href="#t0">SearchTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">28,780</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">RegTest</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">139,778</td><td></td><td></td></tr>
+<tr><td><a href="#t2">BuyTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">150,526</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">6</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">319,084</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.apptad.test.RegisterUserTest</td><td><a href="#m0">signinUser_Test_01</a></td><td rowspan="1">1639500951900</td><td rowspan="1">35819</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.apptad.test.RegisterUserTest</td><td><a href="#m1">newUserEmail_Test_02</a></td><td rowspan="1">1639500922938</td><td rowspan="1">7940</td></tr><tr class="passedeven"><td><a href="#m2">validateFormat_Test_04</a></td><td rowspan="1">1639501001272</td><td rowspan="1">12352</td></tr><tr class="passedeven"><td><a href="#m3">validateManFields_Test_03</a></td><td rowspan="1">1639501028852</td><td rowspan="1">36433</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SearchTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.apptad.test.SearchProductTest</td><td><a href="#m0">User_Scenario_2</a></td><td rowspan="1">1639507255015</td><td rowspan="1">10523</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">RegTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.apptad.test.RegisterUserTest</td><td><a href="#m1">newUser_Test_01</a></td><td rowspan="1">1639507280576</td><td rowspan="1">35971</td></tr><tr><th colspan="4">RegTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.apptad.test.RegisterUserTest</td><td><a href="#m2">newUserEmail_Test_02</a></td><td rowspan="1">1639507256515</td><td rowspan="1">9360</td></tr><tr class="passedeven"><td><a href="#m3">validateFormat_Test_04</a></td><td rowspan="1">1639507329086</td><td rowspan="1">13887</td></tr><tr class="passedeven"><td><a href="#m4">validateManFields_Test_03</a></td><td rowspan="1">1639507357827</td><td rowspan="1">11555</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">BuyTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.apptad.test.BuyProductTest</td><td><a href="#m5">buyPrductTest</a></td><td rowspan="1">1639507256824</td><td rowspan="1">60041</td></tr><tr><th colspan="4">BuyTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.apptad.test.BuyProductTest</td><td><a href="#m6">veryfyPriceTest</a></td><td rowspan="1">1639507332304</td><td rowspan="1">25578</td></tr><tr class="passedeven"><td><a href="#m7">wishListTest</a></td><td rowspan="1">1639507377715</td><td rowspan="1">7500</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.apptad.test.RegisterUserTest#signinUser_Test_01</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: id_gender1&apos; (tried for 30 second(s) with 500 milliseconds interval)
+<h2>SearchTest</h2><h3 id="m0">com.apptad.test.SearchProductTest#User_Scenario_2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>RegTest</h2><h3 id="m1">com.apptad.test.RegisterUserTest#newUser_Test_01</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: id_gender1&apos; (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.apptad.actions.ActionsOnWebElements.clickOnRadioBtn(ActionsOnWebElements.java:19)
-	at com.apptad.page.RegisterUser.newUserSignIn(RegisterUser.java:106)
-	at com.apptad.test.RegisterUserTest.signinUser_Test_01(RegisterUserTest.java:20)
+	at com.appted.actions.ActionsOnWebElements.clickOnRadioBtn(ActionsOnWebElements.java:19)
+	at com.appted.page.RegisterUser.newUserRegister(RegisterUser.java:106)
+	at com.apptad.test.RegisterUserTest.newUser_Test_01(RegisterUserTest.java:20)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_gender1&quot;}
   (Session info: chrome=96.0.4664.93)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-1M4NATU&apos;, ip: &apos;192.168.43.210&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\cpsingh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51366}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0db08ffeb400991c402c7712bea0be5a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\cpsingh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63113}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ae5da73da60dc9e86a08f14fdd1e1ad
 *** Element info: {Using=id, value=id_gender1}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -49,10 +59,29 @@ Session ID: 0db08ffeb400991c402c7712bea0be5a
 	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
 	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 31 more
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.apptad.test.RegisterUserTest#newUserEmail_Test_02</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.apptad.test.RegisterUserTest#validateFormat_Test_04</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.apptad.test.RegisterUserTest#validateManFields_Test_03</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	... 26 more
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.apptad.test.RegisterUserTest#newUserEmail_Test_02</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.apptad.test.RegisterUserTest#validateFormat_Test_04</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.apptad.test.RegisterUserTest#validateManFields_Test_03</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>BuyTest</h2><h3 id="m5">com.apptad.test.BuyProductTest#buyPrductTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (b7a6e52089ab823dece55184cb23846d)] -&gt; id: addressesAreEquals] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-1M4NATU&apos;, ip: &apos;192.168.43.210&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\cpsingh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b7a6e52089ab823dece55184cb23846d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.appted.actions.ActionsOnPageOrderItem.getLoadedElement(ActionsOnPageOrderItem.java:60)
+	at com.appted.page.EcommercePage1.buyProduct(EcommercePage1.java:116)
+	at com.apptad.test.BuyProductTest.buyPrductTest(BuyProductTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.apptad.test.BuyProductTest#veryfyPriceTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.apptad.test.BuyProductTest#wishListTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
