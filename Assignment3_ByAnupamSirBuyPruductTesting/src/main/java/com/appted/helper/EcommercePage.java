@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class EcommercePage extends ActionsOnPage{
+public class EcommercePage extends ActionsOnPageOrderItem{
 	WebDriver driver;
 	public EcommercePage(WebDriver driver) {
 		this.driver=driver;
@@ -57,7 +57,7 @@ public class EcommercePage extends ActionsOnPage{
 	@FindBy(id = "addressesAreEquals")
 	WebElement addressbillAndDeliveryChk;
 	
-	@FindBy(xpath = "//*[@id=\"center_column\"]/form/p/button/span")
+	@FindBy(xpath = "//button[@name='processAddress']//span")
 	WebElement proceedBtnAddress;
 	//*[@id="center_column"]/form/p/button/span
 	@FindBy(id="cgv")
@@ -112,7 +112,7 @@ public class EcommercePage extends ActionsOnPage{
 		scrollDown(driver, 750);
 		stop(200);
 		clickOnElement(getLoadedElement(driver,addressbillAndDeliveryChk));
-		scrollDown(driver, 750);
+		scrollDown(driver, 850);
 		stop(200);
 		//clickOnElement(proceedBtnAddress); ====
 		//proceedBtnAddress.click();

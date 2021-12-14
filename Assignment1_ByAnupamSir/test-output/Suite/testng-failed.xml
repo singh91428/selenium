@@ -3,15 +3,13 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.apptad.test.SignInUserTest">
+      <class name="com.apptad.test.RegisterUserTest">
         <methods>
-          <include name="beforeTest"/>
           <include name="afterTest"/>
           <include name="signinUser_Test_01"/>
-          <include name="validateManFields_Test_03"/>
-          <include name="validateFormat_Test_04"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- com.apptad.test.SignInUserTest -->
+      </class> <!-- com.apptad.test.RegisterUserTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.apptad.test.SignInUserTest">
+      <class name="com.apptad.test.RegisterUserTest">
         <methods>
-          <include name="beforeTest"/>
-          <include name="validateManFields"/>
           <include name="afterTest"/>
+          <include name="signinUser_Test_01"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- com.apptad.test.SignInUserTest -->
+      </class> <!-- com.apptad.test.RegisterUserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

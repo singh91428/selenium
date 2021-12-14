@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class ActionsOnPage {
+public class ActionsOnPageOrderItem {
 	
 	public void sendDataToInput(WebElement ele,String data) {
 		ele.sendKeys(data);
@@ -61,7 +61,7 @@ public class ActionsOnPage {
 	}
 	
 	public void wishListValidate(WebDriver driver, WebElement ele,String expectedResult) {
-		Assert.assertEquals(new ActionsOnPage().getLoadedElement(driver, ele).getText(),expectedResult);
+		Assert.assertEquals(new ActionsOnPageOrderItem().getLoadedElement(driver, ele).getText(),expectedResult);
 		
 	}
 }

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
-public class ActionsOnPage {
+public class ActionsOnPageSerchItem {
 	
 	public void hoverOnElement(WebDriver driver,WebElement ele) {
 		Actions act=new Actions(driver);

@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class EcommercePage extends ActionsOnPage{
+public class EcommercePage extends ActionsOnPageSerchItem{
 	WebDriver driver;
 	public EcommercePage(WebDriver driver) {
 		this.driver=driver;

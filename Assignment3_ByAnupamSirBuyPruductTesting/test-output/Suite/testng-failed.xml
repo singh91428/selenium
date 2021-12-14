@@ -6,7 +6,6 @@
       <class name="com.apptad.test.BuyProductTest">
         <methods>
           <include name="buyPrductTest"/>
-          <include name="veryfyPriceTest"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
         </methods>

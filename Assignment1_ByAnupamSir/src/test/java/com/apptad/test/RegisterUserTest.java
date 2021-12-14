@@ -1,24 +1,23 @@
 package com.apptad.test;
 
-import org.testng.annotations.Test;
-
-import com.apptad.page.CreateDriver;
-import com.apptad.page.SigninUser;
-
-import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
 
-public class SignInUserTest {
+import com.apptad.driver.CreateDriver;
+import com.apptad.page.RegisterUser;
+import com.apptad.screenshot.TakeScreenShotOnTest;
+
+@Listeners(TakeScreenShotOnTest.class)
+public class RegisterUserTest {
 	WebDriver driver;
-	SigninUser page;
+	RegisterUser page;
   @Test()
-  public void signinUser_Test_01() {
-	  page.newUserSignIn();
+  public void newUser_Test_01() {
+	  page.newUserRegister();
   }
   
   @Test()
@@ -41,7 +40,7 @@ public class SignInUserTest {
 	driver=CreateDriver.getChromeDriver();
 	driver.get("http://automationpractice.com/index.php");
 	driver.manage().window().maximize();
-	page=PageFactory.initElements(driver, SigninUser.class);
+	page=PageFactory.initElements(driver, RegisterUser.class);
   }
 
   @AfterMethod

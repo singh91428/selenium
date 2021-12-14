@@ -16,14 +16,14 @@ public class BuyProductTest {
   public void buyPrductTest() {
 	  page.buyProduct(driver);
   }
-//  @Test
-//  public void wishListTest() {
-//	  page.wishList(driver);
-//  }
-//  @Test
-//  public void veryfyPriceTest() {
-//	  page.verifyPrice(driver);
-//  }
+  @Test
+  public void wishListTest() {
+	  page.wishList(driver);
+  }
+  @Test
+  public void veryfyPriceTest() {
+	  page.verifyPrice(driver);
+  }
   @BeforeMethod
   public void beforeMethod() {
 	  driver=CreateDriver.getChromeDriver();
