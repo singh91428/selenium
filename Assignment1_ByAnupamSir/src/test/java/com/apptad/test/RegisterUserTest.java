@@ -7,9 +7,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.apptad.driver.CreateDriver;
-import com.apptad.page.RegisterUser;
-import com.apptad.screenshot.TakeScreenShotOnTest;
+import com.appted.driver.CreateDriver;
+import com.appted.page.RegisterUser;
+import com.appted.screenshot.TakeScreenShotOnTest;
 
 @Listeners(TakeScreenShotOnTest.class)
 public class RegisterUserTest {

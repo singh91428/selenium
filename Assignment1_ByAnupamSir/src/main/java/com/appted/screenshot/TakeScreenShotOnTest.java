@@ -1,4 +1,4 @@
-package com.apptad.screenshot;
+package com.appted.screenshot;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import com.apptad.driver.CreateDriver;
+import com.appted.driver.CreateDriver;
 
 public class TakeScreenShotOnTest extends CreateDriver implements ITestListener {
 	public void onTestFailure(ITestResult result) {

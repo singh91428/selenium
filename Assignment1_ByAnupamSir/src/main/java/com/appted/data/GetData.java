@@ -1,4 +1,4 @@
-package com.apptad.data;
+package com.appted.data;
 
 import java.io.File;
 import java.io.FileInputStream;
