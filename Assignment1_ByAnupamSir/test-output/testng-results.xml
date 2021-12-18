@@ -1,177 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-15T00:10:40 IST" name="Suite" finished-at="2021-12-15T00:13:10 IST" duration-ms="150526">
+  <suite started-at="2021-12-18T21:47:00 IST" name="Default suite" finished-at="2021-12-18T21:49:26 IST" duration-ms="146665">
     <groups>
     </groups>
-    <test started-at="2021-12-15T00:10:40 IST" name="SearchTest" finished-at="2021-12-15T00:11:09 IST" duration-ms="28780">
-      <class name="com.apptad.test.SearchProductTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.apptad.test.SearchProductTest@957e06]" started-at="2021-12-15T00:10:40 IST" name="beforeMethod" finished-at="2021-12-15T00:10:55 IST" duration-ms="14626" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="User_Scenario_2()[pri:0, instance:com.apptad.test.SearchProductTest@957e06]" started-at="2021-12-15T00:10:55 IST" name="User_Scenario_2" finished-at="2021-12-15T00:11:05 IST" duration-ms="10523" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- User_Scenario_2 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.apptad.test.SearchProductTest@957e06]" started-at="2021-12-15T00:11:05 IST" name="afterMethod" finished-at="2021-12-15T00:11:09 IST" duration-ms="3155" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.apptad.test.SearchProductTest -->
-    </test> <!-- SearchTest -->
-    <test started-at="2021-12-15T00:10:40 IST" name="RegTest" finished-at="2021-12-15T00:13:00 IST" duration-ms="139778">
+    <test started-at="2021-12-18T21:47:00 IST" name="Default test" finished-at="2021-12-18T21:49:26 IST" duration-ms="146665">
       <class name="com.apptad.test.RegisterUserTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.apptad.test.RegisterUserTest@50ad3bc1]" started-at="2021-12-15T00:10:40 IST" name="beforeTest" finished-at="2021-12-15T00:10:56 IST" duration-ms="16128" status="PASS">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.apptad.test.RegisterUserTest@7e7be63f]" started-at="2021-12-18T21:47:00 IST" name="setExtent" finished-at="2021-12-18T21:47:01 IST" duration-ms="985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.apptad.test.RegisterUserTest@7e7be63f]" started-at="2021-12-18T21:47:01 IST" name="beforeTest" finished-at="2021-12-18T21:47:03 IST" duration-ms="2667" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="newUserEmail_Test_02()[pri:0, instance:com.apptad.test.RegisterUserTest@50ad3bc1]" started-at="2021-12-15T00:10:56 IST" name="newUserEmail_Test_02" finished-at="2021-12-15T00:11:05 IST" duration-ms="9360" status="PASS">
+        <test-method signature="newUserEmail_Test_02()[pri:0, instance:com.apptad.test.RegisterUserTest@7e7be63f]" started-at="2021-12-18T21:47:03 IST" name="newUserEmail_Test_02" finished-at="2021-12-18T21:47:26 IST" duration-ms="22275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newUserEmail_Test_02 -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.apptad.test.RegisterUserTest@50ad3bc1]" started-at="2021-12-15T00:11:06 IST" name="afterTest" finished-at="2021-12-15T00:11:08 IST" duration-ms="2223" status="PASS">
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.apptad.test.RegisterUserTest@7e7be63f]" started-at="2021-12-18T21:47:26 IST" name="afterTest" finished-at="2021-12-18T21:47:29 IST" duration-ms="2992" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=newUserEmail_Test_02 status=SUCCESS method=RegisterUserTest.newUserEmail_Test_02()[pri:0, instance:com.apptad.test.RegisterUserTest@7e7be63f] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.apptad.test.RegisterUserTest@50ad3bc1]" started-at="2021-12-15T00:11:08 IST" name="beforeTest" finished-at="2021-12-15T00:11:20 IST" duration-ms="12145" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.apptad.test.RegisterUserTest@7e7be63f]" started-at="2021-12-18T21:47:29 IST" name="beforeTest" finished-at="2021-12-18T21:47:30 IST" duration-ms="1627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="newUser_Test_01()[pri:0, instance:com.apptad.test.RegisterUserTest@50ad3bc1]" started-at="2021-12-15T00:11:20 IST" name="newUser_Test_01" finished-at="2021-12-15T00:11:56 IST" duration-ms="35971" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: id_gender1' (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: id_gender1' (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at com.appted.actions.ActionsOnWebElements.clickOnRadioBtn(ActionsOnWebElements.java:19)
-at com.appted.page.RegisterUser.newUserRegister(RegisterUser.java:106)
-at com.apptad.test.RegisterUserTest.newUser_Test_01(RegisterUserTest.java:20)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:831)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#id_gender1"}
-  (Session info: chrome=96.0.4664.93)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-1M4NATU', ip: '192.168.43.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\cpsingh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63113}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9ae5da73da60dc9e86a08f14fdd1e1ad
-*** Element info: {Using=id, value=id_gender1}
-at jdk.internal.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 26 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="newUser_Test_01()[pri:0, instance:com.apptad.test.RegisterUserTest@7e7be63f]" started-at="2021-12-18T21:47:30 IST" name="newUser_Test_01" finished-at="2021-12-18T21:48:27 IST" duration-ms="56262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newUser_Test_01 -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.apptad.test.RegisterUserTest@50ad3bc1]" started-at="2021-12-15T00:11:56 IST" name="afterTest" finished-at="2021-12-15T00:11:59 IST" duration-ms="2159" status="PASS">
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.apptad.test.RegisterUserTest@7e7be63f]" started-at="2021-12-18T21:48:27 IST" name="afterTest" finished-at="2021-12-18T21:48:29 IST" duration-ms="2643" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=newUser_Test_01 status=SUCCESS method=RegisterUserTest.newUser_Test_01()[pri:0, instance:com.apptad.test.RegisterUserTest@7e7be63f] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.apptad.test.RegisterUserTest@50ad3bc1]" started-at="2021-12-15T00:11:59 IST" name="beforeTest" finished-at="2021-12-15T00:12:09 IST" duration-ms="10046" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.apptad.test.RegisterUserTest@7e7be63f]" started-at="2021-12-18T21:48:29 IST" name="beforeTest" finished-at="2021-12-18T21:48:31 IST" duration-ms="1792" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="validateFormat_Test_04()[pri:0, instance:com.apptad.test.RegisterUserTest@50ad3bc1]" started-at="2021-12-15T00:12:09 IST" name="validateFormat_Test_04" finished-at="2021-12-15T00:12:22 IST" duration-ms="13887" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateFormat_Test_04 -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.apptad.test.RegisterUserTest@50ad3bc1]" started-at="2021-12-15T00:12:25 IST" name="afterTest" finished-at="2021-12-15T00:12:27 IST" duration-ms="2127" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.apptad.test.RegisterUserTest@50ad3bc1]" started-at="2021-12-15T00:12:27 IST" name="beforeTest" finished-at="2021-12-15T00:12:37 IST" duration-ms="10412" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="validateManFields_Test_03()[pri:0, instance:com.apptad.test.RegisterUserTest@50ad3bc1]" started-at="2021-12-15T00:12:37 IST" name="validateManFields_Test_03" finished-at="2021-12-15T00:12:49 IST" duration-ms="11555" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateManFields_Test_03 -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.apptad.test.RegisterUserTest@50ad3bc1]" started-at="2021-12-15T00:12:57 IST" name="afterTest" finished-at="2021-12-15T00:13:00 IST" duration-ms="2200" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.apptad.test.RegisterUserTest -->
-    </test> <!-- RegTest -->
-    <test started-at="2021-12-15T00:10:40 IST" name="BuyTest" finished-at="2021-12-15T00:13:10 IST" duration-ms="150526">
-      <class name="com.apptad.test.BuyProductTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.apptad.test.BuyProductTest@194bcebf]" started-at="2021-12-15T00:10:40 IST" name="beforeMethod" finished-at="2021-12-15T00:10:56 IST" duration-ms="16437" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="buyPrductTest()[pri:0, instance:com.apptad.test.BuyProductTest@194bcebf]" started-at="2021-12-15T00:10:56 IST" name="buyPrductTest" finished-at="2021-12-15T00:11:56 IST" duration-ms="60041" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="validateFormat_Test_04()[pri:0, instance:com.apptad.test.RegisterUserTest@7e7be63f]" started-at="2021-12-18T21:48:31 IST" name="validateFormat_Test_04" finished-at="2021-12-18T21:48:31 IST" duration-ms="6" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (b7a6e52089ab823dece55184cb23846d)] -> id: addressesAreEquals] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-1M4NATU', ip: '192.168.43.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\cpsingh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b7a6e52089ab823dece55184cb23846d]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (b7a6e52089ab823dece55184cb23846d)] -> id: addressesAreEquals] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-1M4NATU', ip: '192.168.43.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\cpsingh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b7a6e52089ab823dece55184cb23846d
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at com.appted.actions.ActionsOnPageOrderItem.getLoadedElement(ActionsOnPageOrderItem.java:60)
-at com.appted.page.EcommercePage1.buyProduct(EcommercePage1.java:116)
-at com.apptad.test.BuyProductTest.buyPrductTest(BuyProductTest.java:20)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at com.apptad.test.RegisterUserTest.validateFormat_Test_04(RegisterUserTest.java:172)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -188,48 +83,59 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:831)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- buyPrductTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.apptad.test.BuyProductTest@194bcebf]" started-at="2021-12-15T00:11:57 IST" name="afterMethod" finished-at="2021-12-15T00:12:02 IST" duration-ms="5474" status="PASS">
+        </test-method> <!-- validateFormat_Test_04 -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.apptad.test.RegisterUserTest@7e7be63f]" started-at="2021-12-18T21:48:31 IST" name="afterTest" finished-at="2021-12-18T21:48:33 IST" duration-ms="2455" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateFormat_Test_04 status=FAILURE method=RegisterUserTest.validateFormat_Test_04()[pri:0, instance:com.apptad.test.RegisterUserTest@7e7be63f] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.apptad.test.BuyProductTest@194bcebf]" started-at="2021-12-15T00:12:02 IST" name="beforeMethod" finished-at="2021-12-15T00:12:12 IST" duration-ms="9735" status="PASS">
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.apptad.test.RegisterUserTest@7e7be63f]" started-at="2021-12-18T21:48:33 IST" name="beforeTest" finished-at="2021-12-18T21:48:35 IST" duration-ms="1452" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="veryfyPriceTest()[pri:0, instance:com.apptad.test.BuyProductTest@194bcebf]" started-at="2021-12-15T00:12:12 IST" name="veryfyPriceTest" finished-at="2021-12-15T00:12:37 IST" duration-ms="25578" status="PASS">
+        </test-method> <!-- beforeTest -->
+        <test-method signature="validateManFields_Test_03()[pri:0, instance:com.apptad.test.RegisterUserTest@7e7be63f]" started-at="2021-12-18T21:48:35 IST" name="validateManFields_Test_03" finished-at="2021-12-18T21:49:23 IST" duration-ms="48423" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- veryfyPriceTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.apptad.test.BuyProductTest@194bcebf]" started-at="2021-12-15T00:12:41 IST" name="afterMethod" finished-at="2021-12-15T00:12:47 IST" duration-ms="5511" status="PASS">
+        </test-method> <!-- validateManFields_Test_03 -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.apptad.test.RegisterUserTest@7e7be63f]" started-at="2021-12-18T21:49:23 IST" name="afterTest" finished-at="2021-12-18T21:49:26 IST" duration-ms="2554" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateManFields_Test_03 status=SUCCESS method=RegisterUserTest.validateManFields_Test_03()[pri:0, instance:com.apptad.test.RegisterUserTest@7e7be63f] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.apptad.test.BuyProductTest@194bcebf]" started-at="2021-12-15T00:12:47 IST" name="beforeMethod" finished-at="2021-12-15T00:12:57 IST" duration-ms="10498" status="PASS">
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.apptad.test.RegisterUserTest@7e7be63f]" started-at="2021-12-18T21:49:26 IST" name="endReport" finished-at="2021-12-18T21:49:26 IST" duration-ms="457" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="wishListTest()[pri:0, instance:com.apptad.test.BuyProductTest@194bcebf]" started-at="2021-12-15T00:12:57 IST" name="wishListTest" finished-at="2021-12-15T00:13:05 IST" duration-ms="7500" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wishListTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.apptad.test.BuyProductTest@194bcebf]" started-at="2021-12-15T00:13:05 IST" name="afterMethod" finished-at="2021-12-15T00:13:10 IST" duration-ms="5282" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.apptad.test.BuyProductTest -->
-    </test> <!-- BuyTest -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- endReport -->
+      </class> <!-- com.apptad.test.RegisterUserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

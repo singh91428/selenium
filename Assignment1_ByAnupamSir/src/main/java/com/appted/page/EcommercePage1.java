@@ -119,7 +119,7 @@ public class EcommercePage1 extends ActionsOnPageOrderItem{
 		//clickOnElement(proceedBtnAddress); ====
 		//proceedBtnAddress.click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		clickOnElement(getLoadedElement(driver, proceedBtnAddress));
+		clickOnElement(proceedBtnAddress);
 		scrollDown(driver, 750);
 		stop(200);
 		clickOnElement(getLoadedElement(driver,agreeShipping));

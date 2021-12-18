@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>RegTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 15 00:10:40 IST 2021</td>
+<td>Started on:</td><td>Thu Dec 16 23:23:11 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>139 seconds (139778 ms)</td>
+<tr><td>Total time:</td><td>142 seconds (142550 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -81,7 +81,7 @@ function toggleAllBoxes() {
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at com.appted.actions.ActionsOnWebElements.clickOnRadioBtn(ActionsOnWebElements.java:19)
 	at com.appted.page.RegisterUser.newUserRegister(RegisterUser.java:106)
-	at com.apptad.test.RegisterUserTest.newUser_Test_01(RegisterUserTest.java:20)
+	at com.apptad.test.RegisterUserTest.newUser_Test_01(RegisterUserTest.java:63)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
@@ -93,8 +93,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-1M4NATU&apos;, ip: &apos;192.168.43.210&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\cpsingh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63113}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9ae5da73da60dc9e86a08f14fdd1e1ad
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\cpsingh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54446}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a538317d0294ee17dff7431a9f84a6b2
 *** Element info: {Using=id, value=id_gender1}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -108,7 +108,7 @@ Session ID: 9ae5da73da60dc9e86a08f14fdd1e1ad
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
 	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
@@ -117,13 +117,13 @@ Session ID: 9ae5da73da60dc9e86a08f14fdd1e1ad
 	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 26 more
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1002942498", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1002942498'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: id_gender1&apos; (tried for 30 second(s) with 500 milliseconds interval)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace627455346", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace627455346'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: id_gender1&apos; (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at com.appted.actions.ActionsOnWebElements.clickOnRadioBtn(ActionsOnWebElements.java:19)
 	at com.appted.page.RegisterUser.newUserRegister(RegisterUser.java:106)
-	at com.apptad.test.RegisterUserTest.newUser_Test_01(RegisterUserTest.java:20)
+	at com.apptad.test.RegisterUserTest.newUser_Test_01(RegisterUserTest.java:63)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -153,10 +153,10 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-1M4NATU&apos;, ip: &apos;192.168.43.210&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\cpsingh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63113}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9ae5da73da60dc9e86a08f14fdd1e1ad
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\cpsingh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54446}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a538317d0294ee17dff7431a9f84a6b2
 *** Element info: {Using=id, value=id_gender1}
-	at jdk.internal.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -172,7 +172,7 @@ Session ID: 9ae5da73da60dc9e86a08f14fdd1e1ad
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
 	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
@@ -182,8 +182,8 @@ Session ID: 9ae5da73da60dc9e86a08f14fdd1e1ad
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 26 more
 </pre></div></td>
-<td>35</td>
-<td>com.apptad.test.RegisterUserTest@50ad3bc1</td></tr>
+<td>34</td>
+<td>com.apptad.test.RegisterUserTest@7205765b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -195,18 +195,8 @@ Session ID: 9ae5da73da60dc9e86a08f14fdd1e1ad
 <tr>
 <td title='com.apptad.test.RegisterUserTest.newUserEmail_Test_02()'><b>newUserEmail_Test_02</b><br>Test class: com.apptad.test.RegisterUserTest</td>
 <td></td>
-<td>9</td>
-<td>com.apptad.test.RegisterUserTest@50ad3bc1</td></tr>
-<tr>
-<td title='com.apptad.test.RegisterUserTest.validateManFields_Test_03()'><b>validateManFields_Test_03</b><br>Test class: com.apptad.test.RegisterUserTest</td>
-<td></td>
-<td>11</td>
-<td>com.apptad.test.RegisterUserTest@50ad3bc1</td></tr>
-<tr>
-<td title='com.apptad.test.RegisterUserTest.validateFormat_Test_04()'><b>validateFormat_Test_04</b><br>Test class: com.apptad.test.RegisterUserTest</td>
-<td></td>
 <td>13</td>
-<td>com.apptad.test.RegisterUserTest@50ad3bc1</td></tr>
+<td>com.apptad.test.RegisterUserTest@7205765b</td></tr>
 </table><p>
 </body>
 </html>

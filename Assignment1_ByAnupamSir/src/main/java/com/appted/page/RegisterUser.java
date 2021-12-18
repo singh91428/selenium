@@ -6,9 +6,12 @@ import org.openqa.selenium.support.FindBy;
 
 import com.appted.actions.ActionsOnWebElements;
 import com.appted.data.GetData;
+import com.appted.data.Xls_Reader;
 
 public class RegisterUser extends ActionsOnWebElements{
 	WebDriver driver;
+	String path="D:\\Autimation_Suite2.xlsx";
+	Xls_Reader obj=new Xls_Reader(path);
 	public RegisterUser(WebDriver driver) {
 		this.driver=driver;
 	}
@@ -98,32 +101,50 @@ public class RegisterUser extends ActionsOnWebElements{
 	@FindBy(xpath="//*[@id=\'center_column\']/div/p")
 	WebElement mandatoryFielsError;
 	
+	String email=obj.getCellData("Data",1,2);
+	String firstName=obj.getCellData("Data",2,2);
+	String lastName=obj.getCellData("Data",3,2);
+	String password=obj.getCellData("Data",4,2);
+	String day=obj.getCellData("Data",5,2);
+	String month1=obj.getCellData("Data",6,2);
+	String year1=obj.getCellData("Data",7,2);
+	String fname=obj.getCellData("Data",8,2);
+	String lname=obj.getCellData("Data",9,2);
+	String country=obj.getCellData("Data",10,2);
+	String location=obj.getCellData("Data",11,2);
+	String city=obj.getCellData("Data",12,2);
+	String zip=obj.getCellData("Data",13,2);
+	String additional=obj.getCellData("Data",14,2);
+	String phone=obj.getCellData("Data",15,2);
+	String mob_phone=obj.getCellData("Data",16,2);
+	String alias=obj.getCellData("Data",17,2);
+	String val=obj.getCellData("Data",18,2);
 	public void newUserRegister() {
 		click(signIn);
 		WebElement email= waitElement(driver, emailInput);
-		sendDataToInput(email,GetData.getDataFromExcel("NewUser",1, 0));
+		sendDataToInput(email,this.email);
 		click(createanAccountBtn);
 		clickOnRadioBtn(driver, userTitle);
-		sendDataToInput(firstnameInput,GetData.getDataFromExcel("NewUser",1, 1));
-		sendDataToInput(lastnameInput, GetData.getDataFromExcel("NewUser",1, 2));
-		sendDataToInput(passInput,GetData.getDataFromExcel("NewUser",1, 3));
-		selectFromDropdown(days, GetData.getDataFromExcel("NewUser",1, 4));
-		selectFromDropdown(month, GetData.getDataFromExcel("NewUser",1, 5));
-		selectFromDropdown(year, GetData.getDataFromExcel("NewUser",1, 6));
-		sendDataToInput(addressFirstname, GetData.getDataFromExcel("NewUser",1, 7));
-		sendDataToInput(addressLastname, GetData.getDataFromExcel("NewUser",1, 8));
-		sendDataToInput(addressCountry, GetData.getDataFromExcel("NewUser",1, 9));
-		sendDataToInput(addressAddress,GetData.getDataFromExcel("NewUser",1, 10));
-		sendDataToInput(addressCityInput,GetData.getDataFromExcel("NewUser",1, 11));
+		sendDataToInput(firstnameInput,firstName);
+		sendDataToInput(lastnameInput,lastName);
+		sendDataToInput(passInput,password);
+		selectFromDropdown(days,day);
+		selectFromDropdown(month,month1);
+		selectFromDropdown(year,year1);
+		sendDataToInput(addressFirstname,fname);
+		sendDataToInput(addressLastname,lname);
+		sendDataToInput(addressCountry,country);
+		sendDataToInput(addressAddress,location);
+		sendDataToInput(addressCityInput,city);
 		selectFromDropdown(addressStatedd, "5");
-		sendDataToInput(addressZipInput,GetData.getDataFromExcel("NewUser",1, 12));
+		sendDataToInput(addressZipInput,zip);
 		selectFromDropdown(addressCountrydd, "21");
-		sendDataToInput(addressAddInforTa, GetData.getDataFromExcel("NewUser",1, 13));
-		sendDataToInput(addressPhoneInput,GetData.getDataFromExcel("NewUser",1, 14));
-		sendDataToInput(addressPhoneMobInput, GetData.getDataFromExcel("NewUser",1, 15));
-		sendDataToInput(addressAliasInput,GetData.getDataFromExcel("NewUser",1, 16));
+		sendDataToInput(addressAddInforTa, additional);
+		sendDataToInput(addressPhoneInput,phone);
+		sendDataToInput(addressPhoneMobInput,mob_phone);
+		sendDataToInput(addressAliasInput,alias);
 		click(registerBtn);
-		validate(registerSuccess,GetData.getDataFromExcel("NewUser",1, 22));
+		validate(registerSuccess,val);
 	}
 	
 	public void validateEmail() {
@@ -137,27 +158,27 @@ public class RegisterUser extends ActionsOnWebElements{
 	public void validateMandatoryFields() {
 			click(signIn);
 			WebElement email= waitElement(driver, emailInput);
-			sendDataToInput(email,"singh9157667@gmail.com");
+			sendDataToInput(email,this.email);
 			click(createanAccountBtn);
 			clickOnRadioBtn(driver, userTitle);
-			sendDataToInput(firstnameInput,"Chandra");
-			sendDataToInput(lastnameInput, "Prakash");
-			sendDataToInput(passInput, "chandrakr");
-			selectFromDropdown(days, "30");
-			selectFromDropdown(month, "12");
-			selectFromDropdown(year, "1996");
+			sendDataToInput(firstnameInput,firstName);
+			sendDataToInput(lastnameInput,lastName);
+			sendDataToInput(passInput,password);
+			selectFromDropdown(days,day);
+			selectFromDropdown(month,month1);
+			selectFromDropdown(year,year1);
 			sendDataToInput(addressFirstname, "");
 			sendDataToInput(addressLastname, "");
 			sendDataToInput(addressCountry, "");
 			sendDataToInput(addressAddress, "");
 			sendDataToInput(addressCityInput, "");
 			selectFromDropdown(addressStatedd, "5");
-			sendDataToInput(addressZipInput, "90011");
+			sendDataToInput(addressZipInput,zip);
 			selectFromDropdown(addressCountrydd, "21");
-			sendDataToInput(addressAddInforTa, "15205 North Kierland Blvd. Suite 100");
-			sendDataToInput(addressPhoneInput,"5454544554");
-			sendDataToInput(addressPhoneMobInput, "4553435343");
-			sendDataToInput(addressAliasInput,"Data Completed");
+			sendDataToInput(addressAddInforTa, additional);
+			sendDataToInput(addressPhoneInput,phone);
+			sendDataToInput(addressPhoneMobInput,mob_phone);
+			sendDataToInput(addressAliasInput,alias);
 			click(registerBtn);
 			validateMandatoryFields(driver, mandatoryFielsError);
 	}

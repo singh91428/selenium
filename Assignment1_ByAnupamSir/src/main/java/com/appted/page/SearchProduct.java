@@ -20,7 +20,7 @@ public class SearchProduct extends ActionsOnPageSerchItem{
 	@FindBy(xpath="//*[@id='block_top_menu']/ul/li[1]/ul/li[1]/ul/li[1]/a")
 	WebElement womenTab_t_srt;
 	
-	@FindBy(xpath = "//a[@title='Faded Short Sleeve T-shirts']")
+	@FindBy(xpath = "//div//div//h5//a[@class='product-name']")
 	WebElement product;
 	
 	@FindBy(id="search_query_top")
@@ -36,8 +36,8 @@ public class SearchProduct extends ActionsOnPageSerchItem{
 		hoverOnElement(driver, womenTab);
 		clickOnElement(womenTab_t_srt);
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-		//String searchProduct=productName(product);
-		searchItem(searchBox, searchBtn,product.getText());
+		String searchProduct=product.getText();
+		searchItem(searchBox, searchBtn,searchProduct);
 		validateItemAvailable(itemResult);
 	}
 }

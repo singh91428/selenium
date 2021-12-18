@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Suite]">
-  <test thread-count="5" parallel="tests" name="RegTest(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.apptad.test.RegisterUserTest">
         <methods>
+          <include name="setExtent"/>
+          <include name="endReport"/>
           <include name="afterTest"/>
-          <include name="newUser_Test_01"/>
+          <include name="validateFormat_Test_04"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- com.apptad.test.RegisterUserTest -->
     </classes>
-  </test> <!-- RegTest(failed) -->
-  <test thread-count="5" parallel="tests" name="BuyTest(failed)">
-    <classes>
-      <class name="com.apptad.test.BuyProductTest">
-        <methods>
-          <include name="buyPrductTest"/>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- com.apptad.test.BuyProductTest -->
-    </classes>
-  </test> <!-- BuyTest(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

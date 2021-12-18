@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 15 00:10:40 IST 2021</td>
+<td>Started on:</td><td>Thu Dec 16 23:23:11 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>150 seconds (150526 ms)</td>
+<tr><td>Total time:</td><td>137 seconds (137367 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,34 +76,61 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.apptad.test.BuyProductTest.buyPrductTest()'><b>buyPrductTest</b><br>Test class: com.apptad.test.BuyProductTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (b7a6e52089ab823dece55184cb23846d)] -&gt; id: addressesAreEquals] (tried for 30 second(s) with 500 milliseconds interval)
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a itemprop=&quot;url&quot; class=&quot;button lnk_view btn btn-default&quot; href=&quot;http://automationpractice.com/index.php?id_product=1&amp;amp;controller=product&quot; title=&quot;View&quot;&gt;...&lt;/a&gt; is not clickable at point (36, 22). Other element would receive the click: &lt;div id=&quot;left_column&quot; class=&quot;column col-xs-12 col-sm-3&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=96.0.4664.93)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-1M4NATU&apos;, ip: &apos;192.168.43.210&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\cpsingh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b7a6e52089ab823dece55184cb23846d
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.appted.actions.ActionsOnPageOrderItem.getLoadedElement(ActionsOnPageOrderItem.java:60)
-	at com.appted.page.EcommercePage1.buyProduct(EcommercePage1.java:116)
-	at com.apptad.test.BuyProductTest.buyPrductTest(BuyProductTest.java:20)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\cpsingh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b67173c52b45cd722865ad32a095d1b0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at com.appted.actions.ActionsOnPageOrderItem.clickOnElement(ActionsOnPageOrderItem.java:31)
+	at com.appted.page.EcommercePage1.buyProduct(EcommercePage1.java:99)
+	at com.apptad.test.BuyProductTest.buyPrductTest(BuyProductTest.java:60)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace672751328", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace672751328'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (b7a6e52089ab823dece55184cb23846d)] -&gt; id: addressesAreEquals] (tried for 30 second(s) with 500 milliseconds interval)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace700569197", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace700569197'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a itemprop=&quot;url&quot; class=&quot;button lnk_view btn btn-default&quot; href=&quot;http://automationpractice.com/index.php?id_product=1&amp;amp;controller=product&quot; title=&quot;View&quot;&gt;...&lt;/a&gt; is not clickable at point (36, 22). Other element would receive the click: &lt;div id=&quot;left_column&quot; class=&quot;column col-xs-12 col-sm-3&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=96.0.4664.93)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-1M4NATU&apos;, ip: &apos;192.168.43.210&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\cpsingh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b7a6e52089ab823dece55184cb23846d
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.appted.actions.ActionsOnPageOrderItem.getLoadedElement(ActionsOnPageOrderItem.java:60)
-	at com.appted.page.EcommercePage1.buyProduct(EcommercePage1.java:116)
-	at com.apptad.test.BuyProductTest.buyPrductTest(BuyProductTest.java:20)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\cpsingh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b67173c52b45cd722865ad32a095d1b0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at com.appted.actions.ActionsOnPageOrderItem.clickOnElement(ActionsOnPageOrderItem.java:31)
+	at com.appted.page.EcommercePage1.buyProduct(EcommercePage1.java:99)
+	at com.apptad.test.BuyProductTest.buyPrductTest(BuyProductTest.java:60)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -128,8 +155,8 @@ Session ID: b7a6e52089ab823dece55184cb23846d
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </pre></div></td>
-<td>60</td>
-<td>com.apptad.test.BuyProductTest@194bcebf</td></tr>
+<td>26</td>
+<td>com.apptad.test.BuyProductTest@3527942a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -139,15 +166,15 @@ Session ID: b7a6e52089ab823dece55184cb23846d
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.apptad.test.BuyProductTest.veryfyPriceTest()'><b>veryfyPriceTest</b><br>Test class: com.apptad.test.BuyProductTest</td>
-<td></td>
-<td>25</td>
-<td>com.apptad.test.BuyProductTest@194bcebf</td></tr>
-<tr>
 <td title='com.apptad.test.BuyProductTest.wishListTest()'><b>wishListTest</b><br>Test class: com.apptad.test.BuyProductTest</td>
 <td></td>
-<td>7</td>
-<td>com.apptad.test.BuyProductTest@194bcebf</td></tr>
+<td>9</td>
+<td>com.apptad.test.BuyProductTest@3527942a</td></tr>
+<tr>
+<td title='com.apptad.test.BuyProductTest.veryfyPriceTest()'><b>veryfyPriceTest</b><br>Test class: com.apptad.test.BuyProductTest</td>
+<td></td>
+<td>24</td>
+<td>com.apptad.test.BuyProductTest@3527942a</td></tr>
 </table><p>
 </body>
 </html>
